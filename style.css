@@ -8,6 +8,7 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: #211d1e;
+    display: flex;
 }
 
 .image-sidebar {
@@ -22,7 +23,7 @@ body {
 .logo-container{
     position: absolute;
     top: 20vh;
-    background-color: rgb(68, 68, 68, 0.5);
+    background-color: #44444480;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,4 +38,26 @@ body {
     font-family: 'neon_raveregular';
     font-size: 4.5vw;
     color: #db2d40;
+}
+
+.form-sidebar {
+    height: 100%;
+    width: 65%;
+}
+
+.quote-container {
+    width: 100%;
+    background-color: #2e2c2d;
+    color: #db2d40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12.75vh 0;
+    text-align: center;
+}
+
+.quote {
+    font-family: 'neon_raveregular';
+    font-size: 3vw;
+    text-shadow: 2px 2px 5px #77599f;
 }
