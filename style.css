@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #211d1e;
+}
+
+.image-sidebar {
+    position: relative;
+    height: 100%;
+    width: 35%;
+    background: url(./images/cash-macanaya-IKEQNt9wYb4-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.logo-container{
+    position: absolute;
+    top: 20vh;
+    background-color: rgb(68, 68, 68, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-image {
+    width: 25%;
+}
+
+.logo-text {
+    margin-right: 0.8rem;
+    font-family: 'neon_raveregular';
+    font-size: 4.5vw;
+    color: #db2d40;
+}
