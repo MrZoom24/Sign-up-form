@@ -60,4 +60,20 @@ body {
     font-family: 'neon_raveregular';
     font-size: 3vw;
     text-shadow: 2px 2px 5px #77599f;
+    line-height: 3vw;
+}
+
+form {
+    width: 100%;
+    height: calc(100% - 25.5vh - 6vw); 
+    background-color: #77599f;
+}
+
+.inputs-container {
+    display: flex;
+}
+
+.inputs-left, .inputs-right {
+    display: flex;
+    flex-direction: column;
 }
