@@ -64,16 +64,72 @@ body {
 }
 
 form {
+    box-sizing: border-box;
     width: 100%;
     height: calc(100% - 25.5vh - 6vw); 
     background-color: #77599f;
 }
 
+fieldset {
+    box-sizing: border-box;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+
+legend {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3vw;
+    font-family: 'neon_raveregular';
+    color: #db2d40;
+    text-shadow: 2px 2px 5px #211d1e;
+}
+
 .inputs-container {
     display: flex;
+    gap: 2vw    ;
 }
 
 .inputs-left, .inputs-right {
     display: flex;
     flex-direction: column;
+}
+
+input {
+    width: 17.5vw;
+    height: 2.5vw;
+    background-color: transparent;
+    border: 5px solid #2e2c2d;
+    border-radius: 3px;
+    font-size: 1.5vw;
+    text-align: center;
+    color: #c2bfbf;
+}
+
+input:focus {
+    background-color: #554070;
+    outline: none;
+}
+
+label {
+    font-size: 1.5vw;
+    color: #211d1e;
+}
+
+button {
+    width: 17.5vw;
+    height: 2.5vw;
+    border: 0;
+    font-size: 1.5vw;
+}
+
+.sign-paragraph, a {
+    font-size: 1vw;
 }
