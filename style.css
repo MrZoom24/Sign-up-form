@@ -49,11 +49,11 @@ body {
     width: 100%;
     background-color: #2e2c2d;
     color: #db2d40;
+    padding: 12.75vh 0;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 12.75vh 0;
-    text-align: center;
 }
 
 .quote {
@@ -64,17 +64,17 @@ body {
 }
 
 form {
-    box-sizing: border-box;
     width: 100%;
     height: calc(100% - 25.5vh - 6vw); 
+    box-sizing: border-box;
     background-color: #77599f;
 }
 
 fieldset {
-    box-sizing: border-box;
-    border: 0;
     height: 100%;
     width: 100%;
+    box-sizing: border-box;
+    border: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -103,8 +103,8 @@ legend {
 }
 
 input {
-    width: 17.5vw;
     height: 2.5vw;
+    width: 17.5vw;
     background-color: transparent;
     border: 5px solid #2e2c2d;
     border-radius: 3px;
@@ -118,18 +118,52 @@ input:focus {
     outline: none;
 }
 
+input:indeterminate {
+    border: 5px solid #2e2c2d;
+}
+
 label {
     font-size: 1.5vw;
     color: #211d1e;
 }
 
+.buttons-container {
+    text-align: center;
+}
+
 button {
-    width: 17.5vw;
     height: 2.5vw;
+    width: 17.5vw;
     border: 0;
     font-size: 1.5vw;
+    background-color: #2e2c2d;
+    color: #db2d40;
+    border-radius: 3px;
+    transition: ease 100ms;
+}
+
+button:hover {
+    background-color: #5e5b5d;
+    cursor: pointer;
 }
 
 .sign-paragraph, a {
     font-size: 1vw;
 }
+
+
+a{
+    color: #2e2c2d;
+    text-decoration: none;
+    font-weight: 700;
+    transition: ease 100ms;
+}
+
+a:active, a:hover{
+    color: #db2d40;
+}
+
+.required:after {
+    content:" *";
+    color: #db2d40;
+  }
